@@ -2,17 +2,17 @@
 
 
 ## Aim
-The objective of the project was to stimulate and analyse an agent's behaviour in the Kuiper belt environment and hence train it to maximise its reward in the environment using reinforcement learning.
+The objective of the project was to stimulate and analyse an agent's navigation in an environment and hence train it to maximise its reward in the environment using the various algorithms of reinforcement learning.
 
 
-## Libraries
+## Requirements
 1. Numpy
 2. Matplotlib
 3. Gymnasium
    - gym_minigrid
    - gym_kuiper_escape
 
-#### Frozen lake environment
+## Frozen lake environment
 To grasp the basics, it was necessary to implement initial problems and algorithms of reinforcement learning on a simpler environment, and the Frozen Lake environment was the perfect choice. In this environment, there was complete knowledge of its dynamics, allowing the algorithms to be designed with these specifics in mind, resulting in the best possible solution.
 
 ![Frozen Lake Env](Images/Frozen_Lake.png)
@@ -34,7 +34,24 @@ Reward schedule:
    - Reach frozen: 0
 
 ###### Algorithms
-In the Frozen Lake environment, Dynamic Programming (DP) techniques are employed to derive an optimal policy for navigating through the grid. Specifically, the algorithms used include Policy Iteration and Value Iteration, both of which leverage the principles of dynamic programming to solve Markov Decision Processes (MDPs).
+In the Frozen Lake environment, understanding deterministic and stochastic dynamics is key for choosing the right strategy:
+
+- **Deterministic Environment**: Actions have predictable outcomes. For example, if an agent moves "left," it always ends up to the left. No randomness affects the result.
+
+- **Stochastic Environment**: The Frozen Lake environment is stochastic. Actions have uncertain outcomes; for instance, moving "left" might result in slipping to another direction e.g "right" .This randomness requires the agent to plan for different possible outcomes.
+
+Dynamic programming algorithms help solve this environment by handling its unpredictability:
+
+- **Policy Evaluation**: Estimates how good it is to follow a given policy by considering the possible outcomes.
+
+- **Policy Improvement**: Refines the policy by choosing actions that maximize expected value, accounting for randomness.
+
+- **Policy Iteration**: Repeats evaluation and improvement until the policy is optimal.
+
+- **Value Iteration**: Directly updates state values by choosing the best actions, speeding up convergence to an optimal policy.
+
+These methods find effective strategies in the uncertain conditions of the Frozen Lake.
+
 
 The link for the code has been provided below .
 
@@ -57,7 +74,7 @@ Here's a GIF demonstrating the Frozen Lake algorithm:
 
 
 
-#### Minigrid Environment
+## Minigrid Environment
 After mastering the fundamentals in the Frozen Lake environment, our primary focus shifted to model-free environments, where the true implementation of reinforcement learning occurs. The MiniGrid environment provided an ideal platform for enhancing our understanding of model-free environments, particularly in training our agent in scenarios where the underlying dynamics are unknown.
 
 ![Minigrid Environment](Images/minigr.png)
