@@ -53,7 +53,7 @@ Here's a GIF demonstrating the Frozen Lake algorithm:
 #### Minigrid Environment
 After mastering the fundamentals in the Frozen Lake environment, our primary focus shifted to model-free environments, where the true implementation of reinforcement learning occurs. The MiniGrid environment provided an ideal platform for enhancing our understanding of model-free environments, particularly in training our agent in scenarios where the underlying dynamics are unknown.
 
-![Minigrid Environment]()
+![Minigrid Environment](Images/minigr.png)
 
 ###### State Space
 The state space in MiniGrid is typically discrete, meaning that the agent perceives the environment as a finite set of states, each representing a specific configuration. The state representation generally includes:
@@ -75,3 +75,30 @@ The action space can be represented as a simple enumeration of discrete actions:
 
 ###### Reward
 Agents receive a positive reward for successfully reaching the goal.
+
+
+###### Algorithms
+Here's a brief overview of the algorithms used in the MiniGrid environment:
+
+Algorithms Overview
+1. *Monte Carlo Learning*:
+Monte Carlo methods learn from episodes of experience. The agent observes the outcomes of its actions and updates its value estimates based on the average returns from those actions. It’s useful in environments with unknown dynamics and can handle stochasticity.
+
+
+2. *Q-Learning*:
+Q-Learning is an off-policy algorithm that aims to learn the optimal action-value function.This allows the agent to learn the best action to take in a given state, even when it explores the environment.
+
+
+3. *SARSA* (State-Action-Reward-State-Action):
+SARSA is an on-policy algorithm that updates Q-values based on the action actually taken by the agent .This means the agent learns the value of the policy it follows, which can lead to more stable learning in certain environments.
+
+
+4. *SARSA(λ)*:
+SARSA(λ) combines the concepts of SARSA with eligibility traces, allowing the agent to update not just the most recent state-action pair but also previous pairs based on their eligibility. This can speed up learning and improve convergence by effectively blending Monte Carlo and temporal-difference methods.
+
+These algorithms provide various approaches to learning optimal policies in the MiniGrid environment, accommodating different strategies and learning paradigms.The codes for each of these algrorithms have been attached below.
+
+[Monte Carlo]()
+[Q Learning]()
+[Sarsa]()
+[Sarsa(λ)]()
