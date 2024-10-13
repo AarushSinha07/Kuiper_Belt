@@ -49,6 +49,9 @@ Here's a GIF demonstrating the Frozen Lake algorithm:
 
 
 
+###### Results
+!
+
 
 #### Minigrid Environment
 After mastering the fundamentals in the Frozen Lake environment, our primary focus shifted to model-free environments, where the true implementation of reinforcement learning occurs. The MiniGrid environment provided an ideal platform for enhancing our understanding of model-free environments, particularly in training our agent in scenarios where the underlying dynamics are unknown.
@@ -98,7 +101,11 @@ SARSA(λ) combines the concepts of SARSA with eligibility traces, allowing the a
 
 These algorithms provide various approaches to learning optimal policies in the MiniGrid environment, accommodating different strategies and learning paradigms.The codes for each of these algrorithms have been attached below.
 
-[Monte Carlo]()
-[Q Learning]()
-[Sarsa]()
-[Sarsa(λ)]()
+[Monte Carlo](https://github.com/AarushSinha07/Kuiper_Belt/blob/main/Codes/Minigrid/MCminigrid.py)
+
+[Q Learning](https://github.com/AarushSinha07/Kuiper_Belt/blob/main/Codes/Minigrid/QlearnMini.py)
+
+[Sarsa](https://github.com/AarushSinha07/Kuiper_Belt/blob/main/Codes/Minigrid/sarsa.py)
+
+[Sarsa(λ)](https://github.com/AarushSinha07/Kuiper_Belt/blob/main/Codes/Minigrid/sarsalambda.py)
+
