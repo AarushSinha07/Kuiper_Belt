@@ -50,7 +50,11 @@ Here's a GIF demonstrating the Frozen Lake algorithm:
 
 
 ###### Results
-!
+![Frozen Lake](Images/FrozenLake.png)
+
+
+
+
 
 
 #### Minigrid Environment
@@ -109,3 +113,14 @@ These algorithms provide various approaches to learning optimal policies in the 
 
 [Sarsa(λ)](https://github.com/AarushSinha07/Kuiper_Belt/blob/main/Codes/Minigrid/sarsalambda.py)
 
+
+
+###### Results 
+
+![MiniMonteCarlo]()
+
+![MiniQlearning]()
+
+![MiniSarsa]()
+
+![MiniSarsaLambda]()
