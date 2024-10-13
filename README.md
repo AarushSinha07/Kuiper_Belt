@@ -40,4 +40,5 @@ The link for the code has been provided below .
 
 
 
-  
+Here's a GIF demonstrating the Frozen Lake algorithm:
+![Frozen Lake]()
