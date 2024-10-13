@@ -117,10 +117,10 @@ These algorithms provide various approaches to learning optimal policies in the 
 
 ###### Results 
 
-![MiniMonteCarlo]()
+![MiniMonteCarlo](Images/Monte%Carlo.png)
 
-![MiniQlearning]()
+![MiniQlearning](Images/QLEARNING.png)
 
-![MiniSarsa]()
+![MiniSarsa](Images/SARSA.png)
 
-![MiniSarsaLambda]()
+![MiniSarsaLambda](Images/SARSA_LAMBDA.png)
