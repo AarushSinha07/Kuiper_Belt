@@ -117,7 +117,7 @@ These algorithms provide various approaches to learning optimal policies in the 
 
 ###### Results 
 
-![MiniMonteCarlo](Images/Monte%Carlo.png)
+![MiniMonteCarlo](Images/MonteCarlo.png)
 
 ![MiniQlearning](Images/QLEARNING.png)
 
