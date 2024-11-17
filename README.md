@@ -1,4 +1,4 @@
-# Kuiper Belt Using Reinforcement Learning
+# Frozen Lake And Minigrid Using Reinforcement Learning
 
 
 ## Aim
